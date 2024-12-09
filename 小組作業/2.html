@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            overflow-x: hidden;
+            font-weight: 700;
+        }
+
+        .big-box {
+            background-color: #0a1219;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .head {
+            height: 106px;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            z-index: 100;
+            top: 0px;
+            background-color: #0a1219;
+        }
+
+        .page {
+            height: 100%;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        .page-text {
+            position: absolute;
+            bottom: 13px;
+            left: 16px;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            margin-top: 106px;
+            margin-bottom: 74px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .mbb {
+            height: 100%;
+            width: calc(100% - 32px);
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .m1 {
+            width: 100%;
+            height: 24px;
+            margin-bottom: 5px;
+        }
+
+        .m2 {
+            display: flex;
+            width: 100%;
+            height: 181px;
+            gap: 20px;
+        }
+
+        .m2card {
+            overflow: hidden;
+            width: 100px;
+        }
+
+        .m2text {
+            width: 100%;
+            height: 80px;
+            padding: 5px;
+        }
+
+        .mt1 {
+            overflow: hidden;
+            width: 90px;
+            height: 21px;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            font-size: 14px;
+        }
+
+        .mt2,
+        .mt3 {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .m3,
+        .m4 {
+            width: 335px;
+            display: flex;
+            flex-direction: column;
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .m3-1,
+        .m4-1 {
+            width: 100%;
+            height: 26px;
+            overflow: hidden;
+            margin-bottom: 6px;
+        }
+
+        .m3 img {
+            width: 100%;
+            margin-bottom: 11px;
+        }
+
+        .m3-2 {
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .m3-3 {
+            font-size: 16px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 74px;
+            position: fixed;
+            z-index: 100;
+            bottom: 0px;
+            background-color: #0a1219;
+        }
+
+        .fbb {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .p2 {
+            width: 46px;
+            height: 46px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-box">
+        <header class="head">
+            <div class="page">
+                <span class="page-text">活動</span>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="mbb">
+                <div class="m1">藝術</div>
+                <div class="m2">
+                    <div class="m2card">
+                        <img src="./img素材/展覽.png" alt="">
+                        <div class="m2text">
+                            <div class="mt1">展覽標題</div>
+                            <div class="mt2">藝術家</div>
+                            <div class="mt3">展覽日期</div>
+                        </div>
+                    </div>
+                    <div class="m2card">
+                        <img src="./img素材/展覽.png" alt="">
+                        <div class="m2text">
+                            <div class="mt1">展覽標題</div>
+                            <div class="mt2">藝術家</div>
+                            <div class="mt3">展覽日期</div>
+                        </div>
+                    </div>
+                    <div class="m2card">
+                        <img src="./img素材/展覽.png" alt="">
+                        <div class="m2text">
+                            <div class="mt1">展覽標題</div>
+                            <div class="mt2">藝術家</div>
+                            <div class="mt3">展覽日期</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m3">
+                    <div class="m3-1">近期市集</div>
+                    <img src="./img素材/市集.png" alt="">
+                    <div class="m3-2">日期</div>
+                    <div class="m3-3">地點</div>
+                </div>
+                <div class="m4">
+                    <div class="m4-1">近期市集</div>
+                    <img src="./img素材/市集.png" alt="">
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="fbb">
+                <a href="./1.html" class="p1 pic">
+                    <img src="./img素材/主頁灰.png" alt="">
+                </a>
+                <a href="./2.html" class="p2 pic">
+                    <img src="./img素材/活動白.png" alt="">
+                </a>
+                <a href="./3.html" class="p3 pic">
+                    <img src="./img素材/音樂灰.png" alt="">
+                </a>
+                <a href="./4.html" class="p4 pic">
+                    <img src="./img素材/導覽灰.png" alt="">
+                </a>
+                <a href="./5.html" class="p5 pic">
+                    <img src="./img素材/更多灰.png" alt="">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
