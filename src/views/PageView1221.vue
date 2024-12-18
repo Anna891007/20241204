@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/mcm.css">
+    <style>
+        .m-pic {
+            display: flex;
+            overflow-x: scroll;
+            gap: 16px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            padding: 0 16px;
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 28px;
+            display: flex;
+            gap: 9px;
+        }
+
+        .m-pic::-webkit-scrollbar {
+            display: none;
+        }
+
+        .pic {
+            flex-shrink: 0;
+            width: 250px;
+            height: 250px;
+            background-color: #fff;
+            color: #0a1219;
+            scroll-snap-align: center;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            object-fit: cover;
+            
+        }
+
+        .dots-container {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: white;
+        }
+
+
+        .mbb {
+            height: 100%;
+            width: calc(100% - 32px);
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            background-color: #0a1219;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            width: 250px;
+            flex-direction: column;
+        }
+
+        .c1 {
+            display: flex;
+            align-items: center;
+            height: 30px;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 700;
+            color: #C1240A;
+        }
+
+        .c2 {
+            display: flex;
+            align-items: center;
+            height: 21px;
+            width: 100%;
+            font-size: 14px;
+            color: #C1240A;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .c3 {
+            margin-bottom: 7px;
+        }
+
+        .c4 {
+            margin-bottom: 10px;
+        }
+
+        .c3,
+        .c4 {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            height: 25px;
+            width: 100%;
+        }
+
+        .c3-1,
+        .c4-1 {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            height: 25px;
+            width: 38px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .c3-2,
+        .c4-2 {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            height: 25px;
+            width: 200px;
+            font-size: 14px;
+        }
+
+        .c5 {
+            color: #fff;
+            width: 100%;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            background-color: #c1240a;
+            border-radius: 45px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        a:-webkit-any-link{
+            color: white;
+        }
+
+        .c6 {
+            color: #fff;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .map {
+            margin-top: 5px;
+        }
+
+        .p1 {
+            width: 46px;
+            height: 46px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 28px;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            padding-bottom: 30px;
+            
+        }
+
+        .swiper-slide {
+            width: 70%;
+        }
+
+.swiper-pagination-bullet {
+    background-color: #c4b5b2;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #c1240a;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination {
+    gap: 8px;
+}
+    </style>
+</head>
+
+<body>
+    <div class="big-box">
+        <header class="head">
+            <div class="page">
+                <div class="title">
+                    <a href="./page-2-1.html">
+                        <img src="./img素材/arrow.png" alt="返回">
+                    </a>
+                    <a href="./page-2-1.html">
+                        <span>返回</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section></section>
+
+        <main class="main">
+            <div class="mbb">
+
+                <div class="swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img class="pic" src="./img素材/輪1.png" alt="年度展覽">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="pic" src="./img素材/輪2.png" alt="年度展覽">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="pic" src="./img素材/輪3.png" alt="年度展覽">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="pic" src="./img素材/輪4.png" alt="年度展覽">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="pic" src="./img素材/輪5.png" alt="年度展覽">
+                        </div>
+                       
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+
+                <div class="content">
+                    <div class="c1">活動標題</div>
+                    <div class="c2">魏無羨</div>
+                    <div class="c3">
+                        <div class="c3-1">日期</div>
+                        <div class="c3-2"><span>2024/01/01-2025/01/01</span></div>
+                    </div>
+                    <div class="c4">
+                        <div class="c4-1">地點</div>
+                        <div class="c4-2"><span>天界-雲深不知處</span></div>
+                    </div>
+                    <a href="./park-guidance.html">
+                        <div class="c5">
+                            <img class="map" src="./img素材/地圖.png" alt="">
+                            <span>展覽指引</span>
+                        </div>
+                    </a>
+                    <hr>
+                    <div class="c6">
+                        魏嬰，字無羨，鬼道創始者，人稱夷陵老祖。豐神俊朗，瀟灑不羈。身形纖長，身著黑衣，腰間佩笛，射日之徵中殺敵數千，後來與藍忘機兩人互通心意，終成眷屬。
+                        魏嬰，字無羨，鬼道創始者，人稱夷陵老祖。豐神俊朗，瀟灑不羈。身形纖長，身著黑衣，腰間佩笛，射日之徵中殺敵數千，後來與藍忘機兩人互通心意，終成眷屬。
+                        魏嬰，字無羨，鬼道創始者，人稱夷陵老祖。豐神俊朗，瀟灑不羈。身形纖長，身著黑衣，腰間佩笛，射日之徵中殺敵數千，後來與藍忘機兩人互通心意，終成眷屬。
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="fbb">
+                <a href="./page.html" class="p1 pic">
+                    <img src="./img素材/主頁白.png" alt="主頁-按鈕">
+                </a>
+                <a href="./event.html" class="p2">
+                    <img src="./img素材/活動灰.png" alt="活動-按鈕">
+                </a>
+                <a href="./guided-tour.html" class="p3">
+                    <img src="./img素材/音樂灰.png" alt="語音導覽-按鈕">
+                </a>
+                <a href="./park-guidance.html" class="p4">
+                    <img src="./img素材/導覽灰.png" alt="園區導引-按鈕">
+                </a>
+                <a href="./more-information.html" class="p5">
+                    <img src="./img素材/更多灰.png" alt="更多資訊-按鈕">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+<script>
+    const slider = document.getElementById("slider");
+    const dots = document.querySelectorAll(".dot");
+    const items = document.querySelectorAll(".pic");
+
+    const itemWidth = items[0].offsetWidth + 16;
+    let currentIndex = 0;
+
+    function updateDots(activeIndex) {
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === activeIndex);
+        });
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            scrollToItem(index);
+        });
+    });
+</script>
+
+</html>
