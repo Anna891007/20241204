@@ -15,7 +15,7 @@ a {
 
 .big-box {
     background-color: #0a1219;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@ a {
 }
 
 .head {
-    height: 106px;
+    height: 50px;
     width: 100%;
     display: flex;
     position: fixed;
@@ -46,10 +46,11 @@ a {
 
 .main {
     width: 100%;
-    height: auto;
-    margin-top: 106px;
-    margin-bottom: 74px;
+    height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 74px;
     display: flex;
+    align-items: center;
     justify-content: center;
     background-color: #0a1219;
 }

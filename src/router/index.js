@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,15 +6,62 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: () => import('../views/IndexView.vue'),
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      path: '/test', //網址
+      name: 'test',
+      component: () => import('../views/IndexView.vue'),
+    },
+    {
+      path: '/event', //網址
+      name: 'event',
+      component: () => import('../views/EventView.vue'),
+    },
+    {
+      path: '/GuidedTour1', //網址
+      name: 'GuidedTour1',
+      component: () => import('../views/GuidedTour1.vue'),
+    },
+    {
+      path: '/GuidedTour2', //網址
+      name: 'GuidedTour2',
+      component: () => import('../views/GuidedTour2.vue'),
+    },
+    {
+      path: '/GuidedTour3', //網址
+      name: 'GuidedTour3',
+      component: () => import('../views/GuidedTour3.vue'),
+    },
+    {
+      path: '/GuidedTour4', //網址
+      name: 'GuidedTour4',
+      component: () => import('../views/GuidedTour4.vue'),
+    },
+    {
+      path: '/ParkGuidance1', //網址
+      name: 'ParkGuidance1',
+      component: () => import('../views/ParkGuidance1.vue'),
+    },
+    {
+      path: '/ParkGuidance2', //網址
+      name: 'ParkGuidance2',
+      component: () => import('../views/ParkGuidance2.vue'),
+    },
+    {
+      path: '/ParkGuidance3', //網址
+      name: 'ParkGuidance3',
+      component: () => import('../views/ParkGuidance3.vue'),
+    },
+    {
+      path: '/ParkGuidance4', //網址
+      name: 'ParkGuidance4',
+      component: () => import('../views/ParkGuidance4.vue'),
+    },
+    {
+      path: '/ParkGuidance5', //網址
+      name: 'ParkGuidance5',
+      component: () => import('../views/ParkGuidance5.vue'),
     },
   ],
 })

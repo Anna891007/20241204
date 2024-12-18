@@ -1,0 +1,179 @@
+<!-- 三個區塊 -->
+<!-- 1.放vue的js(可有可無) -->
+<script></script>
+
+<!-- html的畫面 -->
+<template>
+  <main class="main">
+    <div class="mbb">
+      <div class="mp1">
+        <div class="song">
+          <img src="../assets/img/圓圈.png" alt="選取鈕">
+          <div class="song-name">
+            <span class="song-name1">超星男孩</span>
+            <span class="song-name2">全世界最emo的暴雨</span>
+          </div>
+        </div>
+        <div class="song">
+          <img src="../assets/img/圓圈.png" alt="選取鈕">
+          <div class="song-name">
+            <span class="song-name1">告五人</span>
+            <span class="song-name2">披星戴月的想妳</span>
+          </div>
+        </div>
+        <div class="song">
+          <img src="../assets/img/圓圈.png" alt="選取鈕">
+          <div class="song-name">
+            <span class="song-name1">NewJeans</span>
+            <span class="song-name2">Ditto</span>
+          </div>
+        </div>
+        <div class="song">
+          <img src="../assets/img/圓圈.png" alt="選取鈕">
+          <div class="song-name">
+            <span class="song-name1">Aespa</span>
+            <span class="song-name2">supernova</span>
+          </div>
+        </div>
+        <div class="song">
+          <img src="../assets/img/圓圈.png" alt="選取鈕">
+          <div class="song-name">
+            <span class="song-name1">h3r3</span>
+            <span class="song-name2">先說謊的人</span>
+          </div>
+        </div>
+        <div class="song">
+          <img src="../assets/img/圓圈.png" alt="選取鈕">
+          <div class="song-name">
+            <span class="song-name1">溫蒂漫步</span>
+            <span class="song-name2">我想和你一起</span>
+          </div>
+        </div>
+        <div class="song">
+          <img src="../assets/img/圓圈.png" alt="選取鈕">
+          <div class="song-name">
+            <span class="song-name1">南西肯恩</span>
+            <span class="song-name2">大海</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-text">
+        <img class="m-text-pic" src="../assets/img/apt.jpg" alt="導覽 圖片">
+        <div class="m-text-box">
+          <span class="m-text-1">ROSE & BRUNO MARS</span>
+          <span class="m-text-2">APT</span>
+        </div>
+      </div>
+      <img class="mp2" src="../assets/img/播放條.png" alt="播放 進度條">
+      <div class="mbt">
+        <img src="../assets/img/3往前.png" alt="往前 15秒">
+        <img src="../assets/img/播放鈕.png" alt="播放鈕">
+        <img src="../assets/img/3往後.png" alt="往後 15秒">
+      </div>
+    </div>
+  </main>
+</template>
+
+<!-- 這個頁面的樣式(可有可無) -->
+<style>
+.page-pic {
+  position: absolute;
+}
+
+.pp1 {
+  bottom: 13px;
+  left: 16px;
+}
+
+.pp2 {
+  bottom: 13px;
+  right: 16px;
+}
+
+.mbb {
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mp1 {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 47px;
+  margin-bottom: 30px;
+}
+
+.song {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.song-name {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.song-name1 {
+  font-size: 15px;
+}
+
+.song-name2 {
+  font-size: 10px;
+}
+
+.m-text-pic {
+  width: 40px;
+  height: 40px;
+}
+
+.m-text {
+  width: 327px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  margin-bottom: 10px;
+}
+
+.m-text-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.m-text-1 {
+  font-size: 15px;
+}
+
+.m-text-2 {
+  font-size: 10px;
+}
+
+.mbt {
+  width: 375px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 34px;
+}
+
+.p1 {
+  position: absolute;
+  left: 16px;
+}
+
+.p2 {
+  position: absolute;
+  right: 16px;
+}
+</style>

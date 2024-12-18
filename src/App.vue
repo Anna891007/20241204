@@ -1,10 +1,35 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
+  <div class="big-box">
+    <header class="head">
+      <div class="page">
+        <img class="page-pic pp1" src="./assets/img/下拉.png" alt="下拉-縮小">
+        <RouterLink to="/GuidedTour1">
+          <img class="page-pic pp2" src="./assets/img/叉叉.png" alt="離開 本頁">
+        </RouterLink>
+      </div>
+    </header>
+
+    <!-- 每個頁面的內容 -->
+    <RouterView />
+
+    <footer class="footer">
+      <div class="fbb">
+        <RouterLink to="/GuidedTour2">
+          <img src="./assets/img/3下左.png" alt="詳細 內容">
+        </RouterLink>
+        <RouterLink to="/GuidedTour3">
+          <img src="./assets/img/3下右.png" alt="更多-作品">
+        </RouterLink>
+      </div>
+    </footer>
+  </div>
+  <!-- 頁面都會使用到的 -->
+  <!-- <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
@@ -15,9 +40,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
-  </header>
-
-  <RouterView />
+  </header> -->
 </template>
 
 <style scoped>
