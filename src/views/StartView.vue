@@ -1,42 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<script></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>國漫館</title>
-    <link rel="stylesheet" href="./css/mcm.css">
-    <style>
-        header {
-            background-color: black;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .text {
-            font-size: 20px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="big-box">
-        <header>
-            <a href="./start-1.html">
-                <img src="./img素材/0-1logo.png" alt="台灣漫畫博物館">
-            </a>
-            <a href="./start-1.html">
+<template>
+    <header>
+        <a href="../assets/start-1.html">
+            <img src="../assets/img素材/0-1logo.png" alt="台灣漫畫博物館">
+        </a>
+        <a href="../assets/start-1.html">
             <div class="text">台灣漫畫博物館</div>
-            </a>
-        </header>
-        <section></section>
-        <main></main>
-        <footer></footer>
-    </div>
-</body>
+        </a>
+    </header>
+</template>
 
-</html>
+<style scoped>
+header {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 20px;
+}
+</style>

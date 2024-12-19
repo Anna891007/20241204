@@ -1,136 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
+<script></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>國漫館</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            color: white;
-            font-weight: 700;
-        }
-
-        html {
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        body {
-            width: 100vw;
-            height: 100vh;
-            background-color: black;
-        }
-
-        .big-box {
-            width: 92%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            overflow: hidden;
-        }
-
-        .title {
-            font-size: 32px;
-            font-weight: 700px;
-        }
-
-        .pic {
-            width: 100%;
-            margin: 50px 0px 50px 20px;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        .btn {
-            width: 120px;
-            height: 44px;
-            background-color: #c1240a;
-            border-radius: 99px;
-            border: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
-            font-weight: 700px;
-            cursor: pointer;
-        }
-
-        .p1 {
-            height: 80%;
-        }
-
-        .p3 {
-            height: 88%;
-        }
-
-        .sp1,
-        .sp3 {
-            position: absolute;
-            bottom: 0px;
-            font-size: 12px;
-            font-weight: 400px;
-        }
-
-        .text1 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .text3 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        a:hover {
-            opacity: 0.9;
-        }
-
-        button:active {
-            opacity: 0.5;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="big-box">
-        <header class="title">嗨！<br>
-            歡迎來到國漫館
-        </header>
-        <section></section>
-        <main class="pic">
+<template>
+    <main class="pic">
             <div class="text1">
-                <img class="p1" src="./img素材/日本.png" alt="日本語">
+                <img class="p1" src="../assets/img素材/日本.png" alt="日本語">
                 <span class="sp1">日本語</span>
             </div>
 
-            <img class="p2" src="./img素材/中文.png" alt="中文">
+            <img class="p2" src="../assets/img素材/中文.png" alt="中文">
 
             <div class="text3">
-                <img class="p3" src="./img素材/英文.png" alt="English">
+                <img class="p3" src="../assets/img素材/英文.png" alt="English">
                 <span class="sp3">English</span>
             </div>
         </main>
-        <footer>
-            <a href="./page.html">
-                <div class="btn">中文</div>
-            </a>
-        </footer>
-    </div>
-</body>
+</template>
 
-</html>
+<style scoped>
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-weight: 700;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.big-box {
+    width: 92%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700px;
+}
+
+.pic {
+    width: 100%;
+    margin: 50px 0px 50px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
+    width: 120px;
+    height: 44px;
+    background-color: #c1240a;
+    border-radius: 99px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+
+.p1 {
+    height: 80%;
+}
+
+.p3 {
+    height: 88%;
+}
+
+.sp1,
+.sp3 {
+    position: absolute;
+    bottom: 0px;
+    font-size: 12px;
+    font-weight: 400px;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.5;
+}
+</style>

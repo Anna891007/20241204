@@ -1,127 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+<script></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>園區導引</title>
-    <link rel="stylesheet" href="./css/mcm.css">
-    <style>
-        .big-box {
-            background-color: #0a1219;
-            justify-content: center;
-        }
-
-        .page-text2 {
-            width: 35px;
-            height: 35px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            font-weight: 400;
-            font-size: 12px;
-            border-radius: 50%;
-            background-color: #c1240a;
-            bottom: 12px;
-            right: 36px;
-        }
-
-        .bmt {
-            width: 100%;
-            height: 40px;
-            gap: 5px;
-            display: flex;
-            align-items: center;
-            position: absolute;
-            top: 143px;
-            left: 16px;
-        }
-
-        .mt {
-            border-radius: 50px;
-            width: 80px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 12px;
-            font-weight: 400;
-            background-color: #c1240a;
-        }
-
-        .mt-1 {
-            background-color: #555556;
-        }
-
-        .mbb img {
-            width: 323px;
-            height: 148px;
-            border-radius: 13px;
-        }
-
-        .p4 {
-            width: 46px;
-            height: 46px;
-            background-color: red;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 28px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="big-box">
-        <header class="head">
-            <div class="page">
-                <span class="title">園區導引</span>
-                <a href="./park-guidance-4.html">
-                    <div class="page-text2">集點</div>
-                </a>
-            </div>
-        </header>
-
-        <section class="bmt">
-            <a href="./park-guidance-1.html">
+<template>
+    <section class="bmt">
+            <a href="../assets/park-guidance-1.html">
                 <div class="mt mt-1">展覽</div>
             </a>
-            <a href="./park-guidance-2.html">
+            <a href="../assets/park-guidance-2.html">
                 <div class="mt mt-2">一般</div>
             </a>
-            <a href="./park-guidance-3.html">
+            <a href="../assets/park-guidance-3.html">
                 <div class="mt mt-3">商店</div>
             </a>
         </section>
 
         <main class="main">
             <div class="mbb">
-                <img src="./img素材/導引-展覽.png" alt="導引地圖">
+                <img src="../assets/img素材/導引-展覽.png" alt="導引地圖">
             </div>
         </main>
+</template>
 
-        <footer class="footer">
-            <div class="fbb">
-                <a href="./page.html" class="p1 pic">
-                    <img src="./img素材/主頁灰.png" alt="主頁-按鈕">
-                </a>
-                <a href="./event.html" class="p2 pic">
-                    <img src="./img素材/活動灰.png" alt="活動-按鈕">
-                </a>
-                <a href="./guided-tour.html" class="p3 pic">
-                    <img src="./img素材/音樂灰.png" alt="語音導覽-按鈕">
-                </a>
-                <a href="./park-guidance.html" class="p4 pic">
-                    <img src="./img素材/導覽白.png" alt="園區導引-按鈕">
-                </a>
-                <a href="./more-information.html" class="p5 pic">
-                    <img src="./img素材/更多灰.png" alt="更多資訊-按鈕">
-                </a>
-            </div>
-        </footer>
-    </div>
-</body>
+<style scoped>
+.big-box {
+    background-color: #0a1219;
+    justify-content: center;
+}
 
-</html>
+.page-text2 {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: #c1240a;
+    bottom: 12px;
+    right: 36px;
+}
+
+.bmt {
+    width: 100%;
+    height: 40px;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 143px;
+    left: 16px;
+}
+
+.mt {
+    border-radius: 50px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #c1240a;
+}
+
+.mt-1 {
+    background-color: #555556;
+}
+
+.mbb{
+    justify-content: center;
+    align-items: center;
+}
+
+.mbb img {
+    width: 323px;
+    height: 148px;
+    border-radius: 13px;
+}
+
+.p4 {
+    width: 46px;
+    height: 46px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+</style>

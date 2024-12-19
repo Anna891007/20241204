@@ -46,9 +46,11 @@ a {
 
 .main {
     width: 100%;
-    height: auto;
-    margin-top: 106px;
-    margin-bottom: 74px;
+    max-width: 576px;
+    margin: 106px auto 74px;
+    height: calc(100vh - 180px);
+    /* margin-top: 106px;
+    margin-bottom: 74px; */
     display: flex;
     justify-content: center;
     background-color: #0a1219;

@@ -6,7 +6,7 @@
             <div class="m1">藝術</div>
             <div class="m2">
                 <div class="m2card">
-                    <img src="./img素材/展覽.png" alt="展覽">
+                    <img src="../assets/img素材/展覽.png" alt="展覽">
                     <div class="m2text">
                         <div class="mt1">展覽標題</div>
                         <div class="mt2">藝術家</div>
@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="m2card">
-                    <img src="./img素材/展覽.png" alt="展覽">
+                    <img src="../assets/img素材/展覽.png" alt="展覽">
                     <div class="m2text">
                         <div class="mt1">展覽標題</div>
                         <div class="mt2">藝術家</div>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="m2card">
-                    <img src="./img素材/展覽.png" alt="展覽">
+                    <img src="../assets/img素材/展覽.png" alt="展覽">
                     <div class="m2text">
                         <div class="mt1">展覽標題</div>
                         <div class="mt2">藝術家</div>
@@ -32,25 +32,20 @@
             </div>
             <div class="m3">
                 <div class="m3-1">近期市集</div>
-                <img src="./img素材/市集.png" alt="市集">
+                <img src="../assets/img素材/市集.png" alt="市集">
                 <div class="m3-2">日期</div>
                 <div class="m3-3">地點</div>
             </div>
             <div class="m4">
                 <div class="m4-1">近期市集</div>
-                <img src="./img素材/市集.png" alt="市集">
+                <img src="../assets/img素材/市集.png" alt="市集">
             </div>
         </div>
     </main>
-
 </template>
 
-<template v-slot:header>
-    123123213
-    <!-- header 插槽的内容放这里 -->
-</template>
 
-<style>
+<style scoped>
 .m1 {
     width: 100%;
     height: 24px;

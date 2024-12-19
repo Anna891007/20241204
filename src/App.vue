@@ -1,27 +1,62 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import { RouterLink,RouterView } from 'vue-router'
+import router from '@/router';
+export default {
+  components: {
+    RouterLink,
+    RouterView,
+  },
+  methods: {
+    submit(item) {
+      router.push(item);
+    }
+  }
+}
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div class="big-box">
+        <header class="head">
+            <div class="page">
+                <span class="title">首頁</span>
+            </div>
+        </header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+        <RouterView />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+        <footer class="footer">
+            <div class="fbb">
+              <RouterLink to="/PageView" class="p1 pic">
+                <img src="./assets/img素材/主頁白.png" alt="主頁-按鈕">
+              </RouterLink>
+
+              <RouterLink to="/EventView" class="p2 pic">
+                <img src="./assets/img素材/活動灰.png" alt="活動-按鈕">
+              </RouterLink>
+
+              <!-- <button type="button" @click="submit('/EventView')" class="p2 pic">
+                <img src="./assets/img素材/活動灰.png" alt="活動-按鈕">
+              </button> -->
+
+              <RouterLink to="/GuidedTour" class="p3 pic">
+                <img src="./assets/img素材/音樂灰.png" alt="語音導覽-按鈕">
+              </RouterLink>
+
+              <RouterLink to="/ParkGuidance" class="p4 pic">
+                <img src="./assets/img素材/導覽灰.png" alt="園區導引-按鈕">
+              </RouterLink>
+
+              <RouterLink to="/MoreInformation" class="p5 pic">
+                <img src="./assets/img素材/更多灰.png" alt="更多資訊-按鈕">
+              </RouterLink>                
+            </div>
+        </footer>
     </div>
-  </header>
 
-  <RouterView />
 
 </template>
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -83,4 +118,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
+</style> -->

@@ -3,24 +3,24 @@
 <template>
     <main class="main">
         <div class="mbb">
-            <img class="mp1" src="./img素材/apt.jpg" alt="導覽 圖片">
+            <img class="mp1" src="../assets/img素材/apt.jpg" alt="導覽 圖片">
             <div class="m-text">
                 <div class="m-text-box">
                     <span class="m-text-1">ROSE & BRUNO MARS</span>
                     <span class="m-text-2">APT</span>
                 </div>
             </div>
-            <img class="mp2" src="./img素材/播放條.png" alt="播放 進度條">
+            <img class="mp2" src="../assets/img素材/播放條.png" alt="播放 進度條">
             <div class="mbt">
-                <img src="./img素材/3往前.png" alt="往前 15秒">
-                <img src="./img素材/播放鈕.png" alt="播放鈕">
-                <img src="./img素材/3往後.png" alt="往後 15秒">
+                <img src="../assets/img素材/3往前.png" alt="往前 15秒">
+                <img src="../assets/img素材/播放鈕.png" alt="播放鈕">
+                <img src="../assets/img素材/3往後.png" alt="往後 15秒">
             </div>
         </div>
     </main>
 </template>
 
-<style>
+<style scoped>
 .page-pic {
     position: absolute;
 }
