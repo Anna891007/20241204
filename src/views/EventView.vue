@@ -1,20 +1,52 @@
 <!-- 三個區塊 -->
 <!-- 1.放vue的js(可有可無) -->
-<!-- <script> Options
+<script>//Options
+import router from '@/router';
+import SwiperCard from '../components/SwiperCard.vue';
 export default {
+  components: {
+    SwiperCard: SwiperCard,
+    // 下面使用的名子 : 上面引入的元件
+  },
+  data() {
+    return {
+      card: [
+        {
+          img: '',
+          title: '123',
+          name: 'aasfahh',
+          date: 'zxvzxv',
+        },
+        {
+          img: '',
+          title: '789',
+          name: 'treyre',
+          date: 'asdsad',
+        },
+        {
+          img: '',
+          title: '456',
+          name: 'qqq',
+          date: 'wwewe',
+        },
+      ],
+    }
+  },
   methods: {
     submit(item) {
-      this.$router.push(item);
+      router.push(item);
+      // this.$router.push(item);
     }
   }
 }
-</script> -->
-<script setup> //Composition
+</script>
+<!-- <script setup>//Composition
 import router from '@/router';
+import SwiperCard from '../components/SwiperCard.vue';
 const submit = function (item) {
   router.push(item);
 }
-</script>
+</script> -->
 
 <!-- html的畫面 -->
 <template>
@@ -25,7 +57,10 @@ const submit = function (item) {
       <button @click="submit('/GuidedTour1')">12321</button>
       <div class="m1">藝術</div>
       <div class="m2">
-        <div class="m2card">
+        <!-- props -->
+        <!-- 把資料帶進去元件裡面 -->
+        <SwiperCard :item="item" v-for="(item, key) in card" :key="key"></SwiperCard>
+        <!-- <div class="m2card">
           <img src="../assets/img/展覽.png" alt="展覽">
           <div class="m2text">
             <div class="mt1">展覽標題</div>
@@ -48,7 +83,7 @@ const submit = function (item) {
             <div class="mt2">藝術家</div>
             <div class="mt3">展覽日期</div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="m3">
         <div class="m3-1">近期市集</div>
