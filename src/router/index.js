@@ -9,11 +9,6 @@ const router = createRouter({
       component: () => import('../views/IndexView.vue'),
     },
     {
-      path: '/test', //網址
-      name: 'test',
-      component: () => import('../views/IndexView.vue'),
-    },
-    {
       path: '/event', //網址
       name: 'event',
       component: () => import('../views/EventView.vue'),
@@ -62,6 +57,31 @@ const router = createRouter({
       path: '/ParkGuidance5', //網址
       name: 'ParkGuidance5',
       component: () => import('../views/ParkGuidance5.vue'),
+    },
+    {
+      path: '/PageView01', //網址
+      name: 'PageView01',
+      component: () => import('../views/PageView01.vue'),
+    },
+    {
+      path: '/PageView02', //網址
+      name: 'PageView02',
+      component: () => import('../views/PageView02.vue'),
+    },
+    {
+      path: '/PageView03', //網址
+      name: 'PageView03',
+      component: () => import('../views/PageView03.vue'),
+    },
+    {
+      path: '/PageView04', //網址
+      name: 'PageView04',
+      component: () => import('../views/PageView04.vue'),
+    },
+    {
+      path: '/PageView05', //網址
+      name: 'PageView05',
+      component: () => import('../views/PageView05.vue'),
     },
   ],
 })
