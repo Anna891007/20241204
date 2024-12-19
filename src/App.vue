@@ -4,20 +4,25 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div class="big-box">
+    <header class="head">
+    <div class="page">
+        <span class="title">輸入導覽號碼</span>
     </div>
-  </header>
-
+    </header>
+    
   <RouterView />
+
+  <div class="fbb">
+     <a href="./guided-tour-2.html" class="p1">
+         <img src="./img素材/3下左.png" alt="詳細 內容">
+     </a>
+     <a href="./guided-tour-3.html" class="p2">
+         <img src="./img素材/3下右紅.png" alt="更多-作品">
+     </a>
+ </div>
+</div>
+
 </template>
 
 <style scoped>

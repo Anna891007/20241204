@@ -2,6 +2,35 @@
 </script>
 
 <template>
+    <div class="big-box">
+      <header class="head">
+        <div class="page">
+            <img class="page-pic pp1" src="./img素材/下拉.png" alt="下拉-縮小">
+            <a href="./guided-tour.html">
+                <img class="page-pic pp2" src="./img素材/叉叉.png" alt="離開 本頁">
+            </a>
+        </div>
+      </header>
+    </div>
+
+<main class="main">
+    <div class="mbb">
+        <img class="mp1" src="./img素材/apt.jpg" alt="導覽 圖片">
+        <div class="m-text">
+            <div class="m-text-box">
+                <span class="m-text-1">ROSE & BRUNO MARS</span>
+                <span class="m-text-2">APT</span>
+            </div>
+        </div>
+        <img class="mp2" src="./img素材/播放條.png" alt="播放 進度條">
+        <div class="mbt">
+            <img src="./img素材/3往前.png" alt="往前 15秒">
+            <img src="./img素材/播放鈕.png" alt="播放鈕">
+            <img src="./img素材/3往後.png" alt="往後 15秒">
+        </div>
+    </div>
+</main>
+
 </template>
 
 <style>
@@ -78,51 +107,3 @@
             right: 16px;
         }
 </style>
-
-</head>
-
-<body>
-    <div class="big-box">
-        <header class="head">
-            <div class="page">
-                <img class="page-pic pp1" src="./img素材/下拉.png" alt="下拉-縮小">
-                <a href="./guided-tour.html">
-                    <img class="page-pic pp2" src="./img素材/叉叉.png" alt="離開 本頁">
-                </a>
-            </div>
-        </header>
-
-        <section></section>
-
-        <main class="main">
-            <div class="mbb">
-                <img class="mp1" src="./img素材/apt.jpg" alt="導覽 圖片">
-                <div class="m-text">
-                    <div class="m-text-box">
-                        <span class="m-text-1">ROSE & BRUNO MARS</span>
-                        <span class="m-text-2">APT</span>
-                    </div>
-                </div>
-                <img class="mp2" src="./img素材/播放條.png" alt="播放 進度條">
-                <div class="mbt">
-                    <img src="./img素材/3往前.png" alt="往前 15秒">
-                    <img src="./img素材/播放鈕.png" alt="播放鈕">
-                    <img src="./img素材/3往後.png" alt="往後 15秒">
-                </div>
-            </div>
-        </main>
-
-        <footer class="footer">
-            <div class="fbb">
-                <a href="./guided-tour-2.html" class="p1">
-                    <img src="./img素材/3下左.png" alt="詳細 內容">
-                </a>
-                <a href="./guided-tour-3.html" class="p2">
-                    <img src="./img素材/3下右.png" alt="更多-作品">
-                </a>
-            </div>
-        </footer>
-    </div>
-</body>
-
-</html>
