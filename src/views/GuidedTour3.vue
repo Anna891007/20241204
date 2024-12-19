@@ -2,14 +2,6 @@
 </script>
 
 <template>
-<header class="head">
-    <div class="page">
-        <img class="page-pic pp1" src="./img素材/下拉.png" alt="下拉-縮小">
-        <a href="./guided-tour-1.html">
-            <img class="page-pic pp2" src="./img素材/叉叉.png" alt="離開 本頁">
-        </a>
-    </div>
-</header>
 <main class="main">
             <div class="mbb">
                 <div class="mp1">
@@ -81,23 +73,27 @@
         </main>
 </template>
 
-<style>
+<style scoped>
 .page-pic {
     position: absolute;
 }
+
 .pp1 {
     bottom: 13px;
     left: 16px;
 }
+
 .pp2 {
     bottom: 13px;
     right: 16px;
 }
+
 .mbb {
     width: 100%;
     align-items: center;
     flex-direction: column;
 }
+
 .mp1 {
     width: 300px;
     height: 300px;
@@ -106,6 +102,7 @@
     margin-top: 47px;
     margin-bottom: 30px;
 }
+
 .song {
     width: 100%;
     height: 42px;
@@ -113,21 +110,26 @@
     align-items: center;
     gap: 10px;
 }
+
 .song-name {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+
 .song-name1 {
     font-size: 15px;
 }
+
 .song-name2 {
     font-size: 10px;
 }
+
 .m-text-pic {
     width: 40px;
     height: 40px;
 }
+
 .m-text {
     width: 327px;
     height: 40px;
@@ -136,18 +138,22 @@
     gap: 44px;
     margin-bottom: 10px;
 }
+
 .m-text-box {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 5px;
 }
+
 .m-text-1 {
     font-size: 15px;
 }
+
 .m-text-2 {
     font-size: 10px;
 }
+
 .mbt {
     width: 375px;
     height: 75px;
@@ -157,10 +163,12 @@
     gap: 50px;
     margin-top: 34px;
 }
+
 .p1 {
     position: absolute;
     left: 16px;
 }
+
 .p2 {
     position: absolute;
     right: 16px;

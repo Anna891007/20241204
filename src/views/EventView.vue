@@ -50,7 +50,7 @@
 </main>
 </template>
 
-<style>
+<style scoped>
 .m1 {
     width: 100%;
     height: 24px;

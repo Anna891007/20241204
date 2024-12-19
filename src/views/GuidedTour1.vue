@@ -2,17 +2,6 @@
 </script>
 
 <template>
-    <div class="big-box">
-      <header class="head">
-        <div class="page">
-            <img class="page-pic pp1" src="./img素材/下拉.png" alt="下拉-縮小">
-            <a href="./guided-tour.html">
-                <img class="page-pic pp2" src="./img素材/叉叉.png" alt="離開 本頁">
-            </a>
-        </div>
-      </header>
-    </div>
-
 <main class="main">
     <div class="mbb">
         <img class="mp1" src="./img素材/apt.jpg" alt="導覽 圖片">
@@ -30,10 +19,9 @@
         </div>
     </div>
 </main>
-
 </template>
 
-<style>
+<style scoped>
         .page-pic {
             position: absolute;
         }
