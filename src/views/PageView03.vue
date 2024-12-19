@@ -55,7 +55,7 @@
 </template>
 
 <!-- 這個頁面的樣式(可有可無) -->
-<style>
+<style scoped>
 .m-pic {
   display: flex;
   overflow-x: scroll;

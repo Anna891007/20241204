@@ -1,12 +1,28 @@
 <!-- 三個區塊 -->
 <!-- 1.放vue的js(可有可無) -->
-<script></script>
+<!-- <script> Options
+export default {
+  methods: {
+    submit(item) {
+      this.$router.push(item);
+    }
+  }
+}
+</script> -->
+<script setup> //Composition
+import router from '@/router';
+const submit = function (item) {
+  router.push(item);
+}
+</script>
 
 <!-- html的畫面 -->
 <template>
-  <section></section>
+  <section>
+  </section>
   <main class="main">
     <div class="mbb">
+      <button @click="submit('/GuidedTour1')">12321</button>
       <div class="m1">藝術</div>
       <div class="m2">
         <div class="m2card">
@@ -49,7 +65,7 @@
 </template>
 
 <!-- 這個頁面的樣式(可有可無) -->
-<style>
+<style scoped>
 .m1 {
   width: 100%;
   height: 24px;

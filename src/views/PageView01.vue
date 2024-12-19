@@ -85,7 +85,7 @@
 </template>
 
 <!-- 這個頁面的樣式(可有可無) -->
-<style>
+<style scoped>
 .mtop {
   width: 100%;
   height: 83px;

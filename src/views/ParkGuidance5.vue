@@ -21,7 +21,7 @@
 </template>
 
 <!-- 這個頁面的樣式(可有可無) -->
-<style>
+<style scoped>
 .big-box {
   background-color: #0a1219;
   justify-content: center;
