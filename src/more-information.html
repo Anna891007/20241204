@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更多資訊</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            font-weight: 700;
+        }
+
+        html{
+            overflow-x: hidden;
+        }
+
+        .big-box {
+            background-color: black;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .page {
+            width: 100%;
+            height: 56px;
+            padding: 10px 16px;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title {
+            width: 100%;
+            font-size: 20px;
+            font-weight: 700;
+            position: absolute;
+            
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            margin-top: 320px;
+            width: auto;
+            height: 200px;
+            font-family: Arial;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+
+        }
+
+        .title-a {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        hr {
+            width: 300px;
+        }
+
+        .box-a {
+            width: auto;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: space-between;    
+
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .icon {
+            width: 16px;
+            height: 16px;
+            padding: 8px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 74px;
+            position: fixed;
+            bottom: 0px;
+            background-color: black;
+        }
+
+        .fbb {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .p5 {
+            width: 46px;
+            height: 46px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 28px;
+        }
+
+ 
+    </style>
+</head>
+
+<body>
+    <div class="big-box">
+        <header class="head">
+            <div class="page">
+                <span class="title">更多資訊</span>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="box">
+                <div class="title-a">聯絡我們</div>
+                <div class="box-a box-fb">
+                    <span>
+                        <a href="https://www.facebook.com/NationalComicMuseum/" class="icon">
+                            <img src="./img素材/FB.svg" alt="">
+                            <span>Facebook</span>
+                    </span>
+                    <img src="./img素材/material-symbols_arrow link.svg" alt="">
+                    </a>
+
+                </div>
+                <hr>
+
+                <div class="box-a box-ig">
+                    <span>
+                        <a href="https://www.instagram.com/preparatory_office_of_ntmc/" class="icon">
+                            <img src="./img素材/ig.svg" alt="">
+                            <span>Instagram</span>
+                    </span>
+                    <img src="./img素材/material-symbols_arrow link.svg" alt="">
+                    </a>
+                </div>
+                <hr>
+                <div class="box-a box-web">
+                    <span>
+                        <a href="https://www.ntmc.gov.tw/home/zh-tw" class="icon">
+                            <img src="./img素材/web.svg" alt="">
+                        <span>Official website</span>
+                    </span>
+                        <img src="./img素材/material-symbols_arrow link.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="fbb">
+                <a href="./page.html" class="p1 pic">
+                    <img src="./img素材/主頁灰.png" alt="主頁-按鈕">
+                </a>
+                <a href="./event.html" class="p2 pic">
+                    <img src="./img素材/活動灰.png" alt="活動-按鈕">
+                </a>
+                <a href="./guided-tour.html" class="p3 pic">
+                    <img src="./img素材/音樂灰.png" alt="語音導覽-按鈕">
+                </a>
+                <a href="./park-guidance.html" class="p4 pic">
+                    <img src="./img素材/導覽灰.png" alt="園區導引-按鈕">
+                </a>
+                <a href="./more-information.html" class="p5 pic">
+                    <img src="./img素材/更多白.png" alt="更多資訊-按鈕">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
