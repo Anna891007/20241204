@@ -1,0 +1,249 @@
+<script></script>
+
+<template>
+ <main class="main">
+            <div class="mbb">
+                <div class="mtop">
+                    <div class="mtop-up">最新消息</div>
+                    <div class="mtop-down">
+                        <div class="mtop-down-s1">
+                            <img src="./img素材/驚嘆號.png" alt="驚嘆號-圖示">
+                            <span>內文</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mmid1-title">
+                    <span>當期展覽</span>
+                    <a href="./page-2-1.html" class="show">
+                        <span class="showMore">查看更多</span>
+                    </a>
+                </div>
+                <div class="mmid1">
+                    <div class="mmid1-bb">
+                        <a href="./page-1-2-2.1.html" class="m1-card">
+                            <img src="./img素材/m1.png" alt="展覽1">
+                            <div class="m1-card-content">
+                                <span class="m1-card-title">展覽標題</span>
+                                <span class="m1-card-text">介紹</span>
+                            </div>
+                        </a>
+                        <a href="./page-1-2-2.1.html" class="m1-card">
+                            <img src="./img素材/m1.png" alt="展覽2">
+                            <div class="m1-card-content">
+                                <span class="m1-card-title">展覽標題</span>
+                                <span class="m1-card-text">介紹</span>
+                            </div>
+                        </a>
+                        <a href="./page-1-2-2.1.html" class="m1-card">
+                            <img src="./img素材/m1.png" alt="展覽3">
+                            <div class="m1-card-content">
+                                <span class="m1-card-title">展覽標題</span>
+                                <span class="m1-card-text">介紹</span>
+                            </div>
+                        </a>
+                        <a href="./page-1-2-2.1.html" class="m1-card">
+                            <img src="./img素材/m1.png" alt="展覽4">
+                            <div class="m1-card-content">
+                                <span class="m1-card-title">展覽標題</span>
+                                <span class="m1-card-text">介紹</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mmid2">
+                    <img src="./img素材/期間限定區.png" alt="期間限定">
+                </div>
+
+                <div class="mmid3-title">
+                    <span>年度展覽</span>
+                    <a href="./page-4-1.html" class="show3">
+                        <span class="showMore3">查看更多</span>
+                    </a>
+                </div>
+                <div class="mmid3">
+                    <div class="mmid3-1">
+                        <a href="./page-4-1.html">
+                            <img src="./img素材/年度展覽小.png" alt="年度展覽-小圖示-展覽名稱">
+                        </a>
+                        <a href="./page-4-1.html">
+                            <img src="./img素材/年度展覽小.png" alt="年度展覽-小圖示-展覽名稱">
+                        </a>
+                    </div>
+                    <div class="mmid3-2">
+                        <a href="./page-4-1.html">
+                            <img src="./img素材/年度展覽大.png" alt="年度展覽-大圖示-展覽名稱">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>       
+    
+</template>
+
+
+    <style>
+        .mtop {
+            width: 100%;
+            height: 83px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 39px;
+        }
+
+        .mtop-up {
+            width: 100%;
+            height: 24px;
+        }
+
+        .mtop-down {
+            width: 100%;
+            height: 49px;
+            display: flex;
+            align-items: center;
+        }
+
+        .mtop-down-s1 {
+            width: 100%;
+            height: 30px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            gap: 10px;
+        }
+
+        .mtop-down-s1 span {
+            color: #C1240A;
+        }
+
+        .mtop-down-s1 img {
+            margin-left: 14px;
+        }
+
+        .mmid1-title,
+        .mmid3-title {
+            width: 100%;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .show,
+        .show3 {
+            height: 18px;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .show,
+        .show3:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .show:active {
+            opacity: 0.5;
+        }
+
+        .show3:active {
+            opacity: 0.5;
+        }
+
+        .showMore,
+        .showMore3 {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .mmid1 {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 39px;
+        }
+
+        .mmid1::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .mmid1::-webkit-scrollbar-thumb {
+            background-color: #c1c1c1;
+            border-radius: 4px;
+        }
+
+        .mmid1-bb {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+        }
+
+        .m1-card {
+            flex-shrink: 0;
+            min-width: 200px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .m1-card-content {
+            width: 100%;
+            height: 45px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .m1-card-title {
+            width: 100%;
+            height: 21px;
+            font-size: 14px;
+        }
+
+        .m1-card-text {
+            width: 100%;
+            height: 24px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        .m1-card img {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        .mmid2 {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            margin-bottom: 39px;
+        }
+
+        .mmid3 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            overflow: hidden;
+        }
+        .mmid3-1{
+            width: 100%;
+            display: flex;
+            gap: 10px;
+        }
+
+        .p1 {
+            width: 46px;
+            height: 46px;
+            background-color: red;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 28px;
+        }
+    </style>

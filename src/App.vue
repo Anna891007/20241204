@@ -1,23 +1,34 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div class="big-box">
+    <header class="head">
+      <div class="page">
+        <img class="page-pic pp1" src="./assets/img/下拉.png" alt="下拉-縮小">
+        <RouterLink to="/GuidedTour1">
+          <img class="page-pic pp2" src="./assets/img/叉叉.png" alt="離開 本頁">
+        </RouterLink>
+      </div>
+    </header>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <!-- 每個頁面的內容 -->
+    <RouterView />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+    <footer class="footer">
+      <div class="fbb">
+        <RouterLink to="/GuidedTour2">
+          <img src="./assets/img/3下左.png" alt="詳細 內容">
+        </RouterLink>
+        <RouterLink to="/GuidedTour3">
+          <img src="./assets/img/3下右.png" alt="更多-作品">
+        </RouterLink>
+      </div>
+    </footer>
+  </div>
 
-  <RouterView />
 </template>
 
 <style scoped>
