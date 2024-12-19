@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<script>
+</script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>導覽-1</title>
-    <link rel="stylesheet" href="./css/mcm.css">
-    <style>
+<template>
+</template>
+
+<style>
         .page-pic {
             position: absolute;
         }
@@ -79,7 +77,8 @@
             position: absolute;
             right: 16px;
         }
-    </style>
+</style>
+
 </head>
 
 <body>
